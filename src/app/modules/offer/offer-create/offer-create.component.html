@@ -1,0 +1,185 @@
+<form nz-form [formGroup]="comboBoxForm" (ngSubmit)="onSubmit()">
+  <div nz-row nzGutter="24">
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox1">Mode</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox1"
+            formControlName="comboBox1"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox1Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox2">MovementType</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox2"
+            formControlName="comboBox2"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox2Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox3">Incoterms</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox3"
+            formControlName="comboBox3"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox3Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox4">Countries-Cities</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox4"
+            formControlName="comboBox4"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox4Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox5">Package Type</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox5"
+            formControlName="comboBox5"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox5Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="quantity">Quantity</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-input-number
+            id="quantity"
+            formControlName="quantity"
+            [nzMin]="1"
+            [nzMax]="1000"
+            [nzSize]="'large'"
+          ></nz-input-number>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox6">Unit -1</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox6"
+            formControlName="comboBox6"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox6Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox7">Unit -2</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox7"
+            formControlName="comboBox7"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox7Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="8" for="comboBox8">Currency</nz-form-label>
+        <nz-form-control [nzSpan]="16">
+          <nz-select
+            id="comboBox8"
+            formControlName="comboBox8"
+            nzPlaceHolder="Choose"
+            [nzSize]="'large'"
+          >
+            <nz-option
+              *ngFor="let option of comboBox8Data"
+              [nzLabel]="option.name"
+              [nzValue]="option.id"
+            ></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+
+  <nz-form-item>
+    <nz-form-control nzOffset="8" nzSpan="16">
+      <button nz-button nzType="primary" type="submit" [nzSize]="'large'">Send</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

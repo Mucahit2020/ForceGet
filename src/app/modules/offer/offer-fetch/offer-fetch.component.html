@@ -1,0 +1,33 @@
+<div class="table-container">
+  <nz-table #basicTable [nzData]="listOfData" [nzBordered]="true" [nzSize]="'middle'" [nzScroll]="{ x: 'max-content' }">
+    <thead>
+      <tr>
+        <th nzWidth="15%">Mode</th>
+        <th nzWidth="15%">Movement Type</th>
+        <th nzWidth="15%">Incoterm</th>
+        <th nzWidth="15%">Country</th>
+        <th nzWidth="15%">Package Type</th>
+        <th nzWidth="10%">Quantity</th>
+        <th nzWidth="15%">Unit1</th>
+        <th nzWidth="15%">Unit2</th>
+        <th nzWidth="15%">Currency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of listOfData">
+        <td>{{ data.mode }}</td>
+        <td>{{ data.movementType }}</td>
+        <td>{{ data.incoterm }}</td>
+        <td>{{ data.country }}</td>
+        <td>{{ data.packageType }}</td>
+        <td>{{ data.quantity }}</td>
+        <td>{{ data.unit1 }}</td>
+        <td>{{ data.unit2 }}</td>
+        <td>{{ data.currency }}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <div class="logout-button-container">
+    <button nz-button nzType="default" (click)="logout()">Logout</button>
+  </div>
+</div>

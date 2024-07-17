@@ -1,0 +1,26 @@
+.table-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nz-table {
+  margin-bottom: 50px;
+}
+
+.logout-button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  background-color: #f56c6c;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #d43838;
+}

@@ -1,0 +1,50 @@
+<nz-layout class="login-layout">
+  <nz-content>
+    <div class="login-container">
+      <nz-card class="login-card">
+        <form nz-form class="login-form" (ngSubmit)="onSubmit()">
+          <nz-form-item>
+            <nz-form-control>
+              <nz-input-group>
+                <input
+                  nz-input
+                  id="username"
+                  name="username"
+                  [(ngModel)]="loginForm.username"
+                  type="text"
+                  placeholder="Kullanıcı Adı"
+                  required
+                />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <nz-input-group>
+                <input
+                  nz-input
+                  id="password"
+                  name="password"
+                  [(ngModel)]="loginForm.password"
+                  type="password"
+                  placeholder="Şifre"
+                  required
+                />
+              </nz-input-group>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <button nz-button nzType="primary" type="submit" [disabled]="!isFormValid()">Login</button>
+            </nz-form-control>
+          </nz-form-item>
+          <nz-form-item>
+            <nz-form-control>
+              <button nz-button nzType="default" (click)="onRegister()">Sign In</button>
+            </nz-form-control>
+          </nz-form-item>
+        </form>
+      </nz-card>
+    </div>
+  </nz-content>
+</nz-layout>

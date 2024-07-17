@@ -1,0 +1,64 @@
+
+.login-layout {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #fbc2eb, #a6c0fe);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: #fff;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.nz-input-group {
+  width: 100%;
+}
+
+nz-form-item {
+  margin-bottom: 16px;
+}
+
+input[nz-input] {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+button[nz-button] {
+  width: 100%;
+  border-radius: 4px;
+}
+
+button[nz-button][nzType="primary"] {
+  background: #1890ff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+button[nz-button][nzType="default"] {
+  background: #f5f5f5;
+  border: none;
+  color: #1890ff;
+}
+
+button[nz-button][nzType="default"]:hover {
+  background: #e6e6e6;
+}
